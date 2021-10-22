@@ -13,7 +13,7 @@ do
    then
     echo "  + Projects: $y"
     cd $y
-    git pull -u origin master
+    git pull
     cd ..
    fi
   done
