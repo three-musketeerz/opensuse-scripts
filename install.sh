@@ -7,3 +7,6 @@ chmod +x dropbox/install.sh
 ln -sf $(pwd)/git/pull.sh $HOME/bin/pull
 ln -sf $(pwd)/git/run-pull.sh $HOME/bin/run-pull
 ln -sf $(pwd)/dropbox/install.sh $HOME/bin/dropbox-install
+
+mkdir $HOME/.idx-repo
+git clone --depth=1 https://github.com/yiisoft/yii $HOME/.idx-repo/yii
