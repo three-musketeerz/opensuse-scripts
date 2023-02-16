@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ssh-agent sh -c 'ssh-add < /dev/null && pull'
+ssh-agent sh -c 'ssh-add < /dev/null && git pull'
