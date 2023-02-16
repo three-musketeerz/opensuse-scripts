@@ -1,12 +1,21 @@
 #!/bin/sh
+ENV3M="$HOME/.3m"
+mkdir -p $ENV3M
 
-chmod +x git/pull.sh
-chmod +x git/run-pull.sh
-chmod +x dropbox/install.sh
+ENVSCR="$ENV3M/scripts"
+if [ ! -z "${ENVSCR}" ]
+then
+ git clone --depth=1 https://github.com/three-musketeerz/opensuse-scripts $ENVSCR
+else
+ cd "${ENVSCR}"; git pull
+fi
 
-ln -sf $(pwd)/git/pull.sh $HOME/bin/pull
-ln -sf $(pwd)/git/run-pull.sh $HOME/bin/run-pull
-ln -sf $(pwd)/dropbox/install.sh $HOME/bin/dropbox-install
+ENVBIN="$ENV3m/bin"
+mkdir -p $ENVBIN
+rm $ENVBIN/*
 
-mkdir $HOME/.3m
-git clone --depth=1 https://github.com/yiisoft/yii $HOME/.3m/yii
+ln -sf $ENVSCR/git/pull.sh $ENVBIN/git-pull
+ln -sf $ENVSCR/git/pulls.sh $ENVBIN/git-pulls
+ln -sf $ENVSCR/dropbox/install.sh $ENVBIN/dropbox-install
+
+export PATH="$ENVBIN:$PATH"
