@@ -17,4 +17,4 @@ ln -sf $ENVSCR/git/pull.sh $ENVBIN/git-pull
 ln -sf $ENVSCR/git/pulls.sh $ENVBIN/git-pulls
 ln -sf $ENVSCR/dropbox/install.sh $ENVBIN/dropbox-install
 
-echo "export PATH=${ENVBIN}:\${PATH}" >> $HOME/.profile
+echo "export PATH=${ENVBIN}:\${PATH}" >> $HOME/.bashrc
