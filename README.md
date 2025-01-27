@@ -4,5 +4,5 @@ openSUSE Tumbleweed scripts
 
 ## Installation
 
-> curl https://raw.githubusercontent.com/threemusketeerz/opensuse-scripts/main/install.sh |  bash
+> curl https://raw.githubusercontent.com/three-musketeerz/opensuse-scripts/refs/heads/main/install.sh |  bash
 
