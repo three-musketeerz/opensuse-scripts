@@ -16,5 +16,7 @@ mkdir -p $ENVBIN
 ln -sf $ENVSCR/git/pull.sh $ENVBIN/git-pull
 ln -sf $ENVSCR/git/pulls.sh $ENVBIN/git-pulls
 ln -sf $ENVSCR/dropbox/install.sh $ENVBIN/dropbox-install
+ln -sf $ENVSCR/net/ipconfig-all.sh $ENVBIN/ipconfig-all
+ln -sf $ENVSCR/net/ipconfig-ip.sh $ENVBIN/ipconfig-ip
 
 echo "export PATH=${ENVBIN}:\${PATH}" >> $HOME/.bashrc
