@@ -18,5 +18,6 @@ ln -sf $ENVSCR/git/pulls.sh $ENVBIN/git-pulls
 ln -sf $ENVSCR/dropbox/install.sh $ENVBIN/dropbox-install
 ln -sf $ENVSCR/net/ipconfig-all.sh $ENVBIN/ipconfig-all
 ln -sf $ENVSCR/net/ipconfig-ip.sh $ENVBIN/ipconfig-ip
+ln -sf $ENVSCR/sys/sys-dup.sh $ENVBIN/sys-dup
 
 echo "export PATH=${ENVBIN}:\${PATH}" >> $HOME/.bashrc
